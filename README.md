@@ -59,7 +59,7 @@ Add your project screenshot here.
 
 **Frontend:** HTML & CSS
 
-**Developed by:** [Your Name / Team Name]
+**Developed by:** Chetna , Yamini , Parinita
 
 ## 📌 Note
 
