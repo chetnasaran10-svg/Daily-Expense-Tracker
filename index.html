@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise | Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">S</div>
+            <h2>SpendWise<span>.</span></h2>
+        </div>
+
+        <p class="menu-title">MENU</p>
+
+        <nav>
+            <a href="#" class="active">⌂ &nbsp; Dashboard</a>
+            <a href="#add">＋ &nbsp; Add Expense</a>
+            <a href="#transactions">▤ &nbsp; Transactions</a>
+            <a href="#categories">◈ &nbsp; Categories</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="tip-card">
+                <span>💡 Smart Tip</span>
+                <p>Small savings today create big possibilities tomorrow.</p>
+            </div>
+            <p class="version">SPENDWISE © 2026</p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="greeting">YOUR FINANCIAL SPACE</p>
+                <h1>Good morning! 👋</h1>
+                <p class="subtext">Take control of your money, one day at a time.</p>
+            </div>
+            <div class="profile">
+                <div class="avatar">Y</div>
+                <div>
+                    <strong>My Account</strong>
+                    <small>Personal Finance</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card balance">
+                <div class="stat-top">
+                    <span>Total Balance</span>
+                    <span class="stat-icon">₹</span>
+                </div>
+                <h2>₹25,450</h2>
+                <p>Available balance</p>
+            </div>
+
+            <div class="stat-card income">
+                <div class="stat-top">
+                    <span>Total Income</span>
+                    <span class="stat-icon">↗</span>
+                </div>
+                <h2>₹35,000</h2>
+                <p>Monthly income</p>
+            </div>
+
+            <div class="stat-card expense">
+                <div class="stat-top">
+                    <span>Total Expenses</span>
+                    <span class="stat-icon">↘</span>
+                </div>
+                <h2>₹9,550</h2>
+                <p>Monthly spending</p>
+            </div>
+        </section>
+
+        <section class="content-card" id="add">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">RECORD YOUR SPENDING</p>
+                    <h2>Add New Expense</h2>
+                </div>
+                <span class="heading-icon">＋</span>
+            </div>
+
+            <form>
+                <div class="form-grid">
+                    <div class="field">
+                        <label>Expense Name</label>
+                        <input type="text" placeholder="e.g. Shopping">
+                    </div>
+
+                    <div class="field">
+                        <label>Amount (₹)</label>
+                        <input type="number" placeholder="Enter amount">
+                    </div>
+
+                    <div class="field">
+                        <label>Category</label>
+                        <select>
+                            <option>Select category</option>
+                            <option>Food</option>
+                            <option>Shopping</option>
+                            <option>Travel</option>
+                            <option>Education</option>
+                            <option>Entertainment</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label>Date</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Description</label>
+                    <input type="text" placeholder="Add a short note...">
+                </div>
+
+                <button type="button" class="add-btn">＋ Add Expense</button>
+            </form>
+        </section>
+
+        <section class="content-card" id="transactions">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR MONEY ACTIVITY</p>
+                    <h2>Recent Transactions</h2>
+                </div>
+                <a href="#" class="view-all">View all →</a>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>EXPENSE</th>
+                            <th>CATEGORY</th>
+                            <th>DATE</th>
+                            <th>AMOUNT</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><span class="item-icon food">🍕</span> Lunch</td>
+                            <td><span class="tag orange">Food</span></td>
+                            <td>11 Nov 2026</td>
+                            <td class="amount">− ₹250</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="item-icon travel">🚌</span> Bus Pass</td>
+                            <td><span class="tag blue">Travel</span></td>
+                            <td>10 Nov 2026</td>
+                            <td class="amount">− ₹500</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="item-icon study">📚</span> Books</td>
+                            <td><span class="tag purple">Education</span></td>
+                            <td>09 Nov 2026</td>
+                            <td class="amount">− ₹800</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="item-icon shop">🛍️</span> Shopping</td>
+                            <td><span class="tag pink">Shopping</span></td>
+                            <td>08 Nov 2026</td>
+                            <td class="amount">− ₹1,200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-card" id="categories">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">UNDERSTAND YOUR HABITS</p>
+                    <h2>Spending Breakdown</h2>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-info">
+                    <span>🍕 Food</span>
+                    <strong>₹2,500</strong>
+                </div>
+                <div class="progress"><div class="fill food-fill"></div></div>
+            </div>
+
+            <div class="category">
+                <div class="category-info">
+                    <span>🚌 Travel</span>
+                    <strong>₹1,500</strong>
+                </div>
+                <div class="progress"><div class="fill travel-fill"></div></div>
+            </div>
+
+            <div class="category">
+                <div class="category-info">
+                    <span>📚 Education</span>
+                    <strong>₹3,000</strong>
+                </div>
+                <div class="progress"><div class="fill education-fill"></div></div>
+            </div>
+
+            <div class="category">
+                <div class="category-info">
+                    <span>🛍️ Shopping</span>
+                    <strong>₹2,550</strong>
+                </div>
+                <div class="progress"><div class="fill shopping-fill"></div></div>
+            </div>
+        </section>
+
+        <footer>
+            Made with ♥ for smarter money management.
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
+                    
